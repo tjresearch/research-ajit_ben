@@ -27,7 +27,7 @@ def hough(im, ntx=460, mry=360):
 
 
 def test():
-    "Test Hough transform with pentagon."
+    "Test Hough transform with cube."
     im = Image.open("cube.png").convert("L")
     him = hough(im)
     him.save("ho4.bmp")
@@ -38,3 +38,5 @@ if __name__ == "__main__": test()
 
 
 # http://me.umn.edu/courses/me5286/vision/Notes/2015/ME5286-Lecture9.pdf
+
+# https://pdfs.semanticscholar.org/ae2f/1e490748a6fa3b859f124c763d4556d2930b.pdf
