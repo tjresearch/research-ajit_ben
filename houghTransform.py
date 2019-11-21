@@ -28,7 +28,7 @@ def hough(im, ntx=460, mry=360):
 
 def test():
     "Test Hough transform with cube."
-    im = Image.open("cube.png").convert("L")
+    im = Image.open("newCube1.png").convert("L")
     him = hough(im)
     him.save("ho4.bmp")
 
