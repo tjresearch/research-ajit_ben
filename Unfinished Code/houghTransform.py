@@ -35,7 +35,9 @@ def test():
 
 if __name__ == "__main__": test()
 
+# https://www.youtube.com/watch?v=AMFhjir4WgQ
 
+# https://hub.packtpub.com/opencv-detecting-edges-lines-shapes/
 
 # http://me.umn.edu/courses/me5286/vision/Notes/2015/ME5286-Lecture9.pdf
 
