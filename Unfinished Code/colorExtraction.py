@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 from imutils import contours
 
-image = cv2.imread('1.png')
+image = cv2.imread('face.png')
 original = image.copy()
 image = cv2.cvtColor(image, cv2.COLOR_BGR2HSV)
 mask = np.zeros(image.shape, dtype=np.uint8)
@@ -51,8 +51,6 @@ number = 0
 for row in cube_rows:
     for c in row:
         x,y,w,h = cv2.boundingRect(c)
-        if (w+h < 400 or w+h > 1000):
-            continue
         cv2.rectangle(original, (x, y), (x + w, y + h), (36,255,12), 2)
 
         cv2.putText(original, "#{}".format(number + 1), (x,y - 5), cv2.FONT_HERSHEY_SIMPLEX, 0.7, (255,255,255), 2)
